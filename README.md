@@ -24,15 +24,20 @@
 graph TD
     A[Client 前端] --> B[Nginx 反向代理]
     B --> C[Spring Boot 应用]
+
     C --> D[(MySQL 数据库)]
     C --> E[(Redis 缓存层)]
+
     E --> E1[缓存数据]
     E --> E2[分布式锁]
     E --> E3[秒杀库存]
     E --> E4[GEO位置]
     E --> E5[Bitmap统计]
+
     C --> F[线程池 / 异步任务]
+
     F --> D
+---
 
 ## 🧩 技术栈
 
