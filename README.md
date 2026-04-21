@@ -86,8 +86,7 @@ graph TD
 
 ### 缓存穿透
 - 使用 **空值缓存**
-
-  ```mermaid
+```mermaid
 flowchart TD
     A[请求数据] --> B{Redis是否存在?}
 
@@ -274,16 +273,17 @@ Bitmap（UV统计）
 ## 🛠️ 启动方式
 
 ```bash
-# 1. 克隆项目
+ 1. 克隆项目
 git clone https://github.com/kamisheng/hmdp-kami.git
 
-# 2. 启动 Redis
+ 2. 启动 Redis
 redis-server
 
-# 3. 修改 application.yml 数据库配置
+ 3. 修改 application.yml 数据库配置
 
-# 4. 启动项目
+ 4. 启动项目
 mvn spring-boot:run
+```
 📸 项目截图（可选）
 
 这里可以放接口测试图 / 前端页面截图
@@ -294,6 +294,7 @@ mvn spring-boot:run
 引入 ElasticSearch 实现搜索
 微服务拆分（Spring Cloud）
 接入限流组件（Sentinel）
+
 👨‍💻 作者
 GitHub: https://github.com/kamisheng
 📄 License
