@@ -21,7 +21,8 @@
 
 **总体架构**
 
-```graph TD
+```mermaid
+graph TD
     A[Client 前端] --> B[Nginx 反向代理]
     B --> C[Spring Boot 应用]
 
