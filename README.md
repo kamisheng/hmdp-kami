@@ -21,7 +21,7 @@
 
 **总体架构**
 
-graph TD
+```graph TD
     A[Client 前端] --> B[Nginx 反向代理]
     B --> C[Spring Boot 应用]
 
@@ -37,6 +37,7 @@ graph TD
     C --> F[线程池 / 异步任务]
 
     F --> D
+```
 ---
 
 ## 🧩 技术栈
